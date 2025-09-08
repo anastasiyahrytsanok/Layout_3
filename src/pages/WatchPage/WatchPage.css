@@ -1,0 +1,30 @@
+.watch-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 70px 0 80px;
+}
+
+@media (max-width: 1150px) {
+  .watch-page {
+    flex-direction: row;
+    padding: 10px 20px 0 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .watch-page {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .watch__title {
+    padding: 0 16px;
+  }
+
+  .watch__details {
+    padding: 0 16px;
+  }
+}

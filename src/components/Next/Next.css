@@ -1,0 +1,107 @@
+.next {
+  width: var(--next-width);
+  min-width: var(--next-width);
+}
+
+.next__title--container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 25px;
+}
+
+.next__title {
+  line-height: 45px;
+  font-size: 36px;
+  color: var(--color-text-dark);
+}
+
+.autoplay {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+}
+
+.autoplay__text {
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  font-weight: 700;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+}
+
+.switch__input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.switch__track {
+  display: inline-block;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  background: var(--color-background-grey);
+  border-radius: var(--switch-height);
+  position: relative;
+}
+
+.switch__thumb {
+  position: absolute;
+  top: 50%;
+  left: var(--switch-paddings);
+  width: calc(var(--switch-height) - var(--switch-paddings) * 2);
+  height: calc(var(--switch-height) - var(--switch-paddings) * 2);
+  border-radius: 50%;
+  background: var(--color-switch-on);
+  transform: translateY(-50%);
+}
+
+.switch__input:checked + .switch__track {
+  background: var(--color-background-dark-grey);
+}
+
+.switch__input:checked + .switch__track .switch__thumb {
+  transform: translate(calc(var(--switch-width) - var(--switch-height)), -50%);
+}
+
+@media (max-width: 1040px) {
+  .next {
+    width: 100%;
+    min-width: 0;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 590px) {
+  .next__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .autoplay__text {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .switch__track {
+    width: var(--switch-width-sm);
+    height: var(--switch-height-sm);
+    border-radius: var(--switch-height-sm);
+  }
+
+  .switch__thumb{
+    width: calc(var(--switch-height-sm) - var(--switch-paddings-sm) * 2);
+    height: calc(var(--switch-height-sm) - var(--switch-paddings-sm) * 2);
+    left: var(--switch-paddings-sm);
+  }
+}

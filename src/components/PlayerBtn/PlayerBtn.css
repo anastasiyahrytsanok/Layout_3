@@ -1,0 +1,17 @@
+.player-btn {
+  color: var(--color-text-white);
+  display: flex;
+  align-items: center;
+}
+
+.player-btn--bright {
+  opacity: 1;
+}
+
+.player-btn--dark {
+  opacity: 0.5;
+}
+
+.player-btn:hover {
+  opacity: 1;
+}

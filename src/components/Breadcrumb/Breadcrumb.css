@@ -1,0 +1,40 @@
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: fit-content;
+  text-align: center;
+}
+
+.breadcrumb--clickable {
+  cursor: pointer;
+}
+
+.breadcrumb--red {
+  background-color: var(--color-background-attention);
+  color: var(--color-text-white);
+}
+
+.breadcrumb--grey {
+  background-color: var(--color-background-grey);
+}
+
+.breadcrumb--grey:hover {
+  background-color: var(--color-background-dark-grey);
+}
+
+.breadcrumb__text {
+  width: max-content;
+}
+
+@media (max-width: 590px) {
+  .channel__subscribe {
+    display: none;
+  }
+}
