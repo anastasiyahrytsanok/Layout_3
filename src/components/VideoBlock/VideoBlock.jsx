@@ -114,7 +114,7 @@ export default function VideoBlock() {
             <img className="channel__avatar" src={avatar} alt="Food & Drink" />
             <div className="channel__body">
               <h2 className="channel__name">Food &amp; Drink</h2>
-              <div className="channel__published">Published on 14 Jun 2019</div>
+              <div className="channel__published">Published on 14 Jun</div>
               <p className="channel__desc">
                 A successful marketing plan relies heavily on the pulling-power
                 of advertising copy. Writing result-oriented ad copy is

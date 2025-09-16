@@ -9,6 +9,8 @@
   overflow: hidden;
   background: var(--color-background-default);
   aspect-ratio: 16 / 9;
+  max-height: 700px;
+  width: 100%;
 }
 
 .player__poster {
@@ -66,6 +68,10 @@
   gap: 40px;
 }
 
+.player__buttons--right {
+  gap: 25px;
+}
+
 .volume-container {
   display: flex;
   flex-direction: row;
@@ -111,7 +117,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 4px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   border-bottom: 1px solid var(--color-border-default);
 }
 
@@ -131,14 +137,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .channel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 38px 0;
+  padding: 23px 0;
+  margin-left: -5px;
 }
 
 .channel__container {
@@ -155,7 +162,7 @@
 }
 
 .channel__body {
-  width: 61%;
+  width: 67%;
 }
 
 .channel__name {
@@ -223,6 +230,7 @@
 
   .channel {
     padding: 0 16px;
+    margin-left: 0;
   }
 }
 
@@ -230,7 +238,7 @@
   .watch__details {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 19px;
   }
 
   .watch__more {
@@ -251,7 +259,7 @@
 
   .channel {
     align-items: center;
-    padding: 20px 16px;
+    padding: 20px 16px 10px;
     border-bottom: 1px solid var(--color-border-default);
     margin-bottom: 20px;
   }
@@ -266,6 +274,8 @@
 
   .watch__more--mobile {
     display: block;
+    align-self: baseline;
+    margin: 7px 10px;
   }
 }
 
@@ -277,19 +287,19 @@
   .player__controls--mobile {
     display: flex;
     flex-direction: row;
-    width: 98%;
+    width: 97%;
     background-color: rgba(61, 61, 61, 0.6);
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 8px 16px;
+    padding: 5px 16px 5px 20px;
     align-items: center;
     justify-content: space-between;
-    gap: 6px;
+    gap: 12px;
     border-radius: 10px;
     margin-left: 1%;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   .player__progress {
@@ -318,6 +328,7 @@
   .watch__title {
     font-size: 20px;
     line-height: 25px;
+    width: 80%;
   }
 
   .watch__meta {
@@ -346,13 +357,22 @@
     font-size: 16px;
     line-height: 20px;
     color: var(--color-text-hover);
+    margin-top: -7px;
   }
 
   .watch__actions--breadcrumbs {
     contain: inline-size;
   }
 
-  .watch__details {
-    display: none;
+  .watch__title--container {
+    margin-top: 14px;
+  }
+
+  .channel {
+    padding: 21px 16px;
+  }
+
+  .channel__body {
+    margin-top: 7px;
   }
 }

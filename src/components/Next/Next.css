@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .next__title {
@@ -23,6 +23,7 @@
   flex-direction: row;
   gap: 11px;
   align-items: center;
+  margin-right: 4px;
 }
 
 .autoplay__text {
@@ -99,9 +100,13 @@
     border-radius: var(--switch-height-sm);
   }
 
-  .switch__thumb{
+  .switch__thumb {
     width: calc(var(--switch-height-sm) - var(--switch-paddings-sm) * 2);
     height: calc(var(--switch-height-sm) - var(--switch-paddings-sm) * 2);
     left: var(--switch-paddings-sm);
+  }
+
+  .next__title--container {
+    margin-bottom: 10px;
   }
 }
