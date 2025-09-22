@@ -1,0 +1,38 @@
+.sidebar__item {
+  height: auto;
+}
+
+.sidebar__item--trending {
+  margin-left: 14px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 20px;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.sidebar__link:hover {
+  color: var(--color-text-hover);
+}
+
+.sidebar__link:hover .sidebar__icon {
+  opacity: 1;
+  color: var(--color-text-hover);
+}
+
+.sidebar__icon-box {
+  width: auto;
+  opacity: 0.5;
+}
+
+@media (max-width: 435px) {
+  .sidebar__link {
+    line-height: 13px;
+    font-size: 10px;
+  }
+}

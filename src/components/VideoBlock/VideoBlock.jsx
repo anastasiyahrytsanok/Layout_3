@@ -1,6 +1,6 @@
 import "./VideoBlock.css";
 
-import poster from "../../assets/video-poster.png"; // постер видео (16:9)
+import poster from "../../assets/video-poster.png";
 import PlayerBtn from "../PlayerBtn/PlayerBtn";
 import PauseIcon from "../../assets/svg/PauseIcon";
 import NextIcon from "../../assets/svg/NextIcon";

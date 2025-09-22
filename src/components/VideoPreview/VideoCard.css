@@ -57,10 +57,12 @@
   .video-card__title {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 10px;
   }
 
   .video-card__description {
     font-size: 13px;
     line-height: 16px;
+    margin-top: 3px;
   }
 }
